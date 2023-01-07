@@ -2,11 +2,20 @@ body {
     margin: 5% 10%;
 }
 
-h1, h2 {
+h1, h2{
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-align: center;
 }
 
 p {
     font-family:fantasy, monospace, sans-serif;
+}
+
+table {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th {
+    padding: 10px 50px;
 }
