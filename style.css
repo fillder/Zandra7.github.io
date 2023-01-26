@@ -8,9 +8,13 @@
     text-align: center;
 }
 
-h1, h2{
+h1, h2 {
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 /* p {
@@ -18,12 +22,15 @@ h1, h2{
 } */
 
 table {
+    text-align: center;
     margin: auto;
-    /* font-family: 'Courier New', Courier, monospace; */
+    /*font-family: 'Courier New', Courier, monospace; */
 }
 
-th {
+th, tr {
+    border: 10px;
     padding: 10px 50px;
+    text-align: center;
 }
 
 a {
@@ -41,4 +48,8 @@ a {
     background-color: rgba(219, 237, 255, 0.8);
     padding: 20px;
     text-align: center;
+}
+
+table, tr, td {
+    margin-left: auto;
 }
