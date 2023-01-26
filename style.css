@@ -4,22 +4,31 @@
 }
 
 main {
-    margin: 5% 10%;
+    margin: 100px 150px;
     text-align: center;
 }
 /* SANDRA og UNDEROVERSKIRFTER */ 
-h1, h2 {
+h1, h2, h3 {
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-align: center;
 }
-/* UNDEROVERSKRIFTER */
-h2 {
-    font-size: 20px;
+
+h4 {
+    font-family: sans-serif, bold;
 }
 
-/* p {
+/* UNDEROVERSKRIFTER */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(147, 237, 147);
+  }
+
+p {
   font-family:fantasy, monospace, sans-serif;
-} */
+}
 
 table {
     text-align: center;
@@ -51,69 +60,64 @@ a {
     text-align: center;
 }
 
-/* OM MEG */
-table, tr, td {
-    margin-left: auto;
-    border: 2px solid red;
-}
-
-/* UNDEROVERSKRIFTER */
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  align-items: center;
-  border: 2px solid green;
-}
 
 .flex-container > div {
-    background-color: aqua;
+    background-color: rgb(213, 225, 225);
     margin: 2%;
     padding: 20px;  
 }
 
-/* INFORMASJON, SPRÅK OG FERDIGHETER i OM MEG */
+/* INFORMASJON og SPRÅK i OM MEG */
 .flex-container2 {
     display: flex;
     justify-content: center;
     align-content: space-between;
     align-items: center;
-    border: 2px solid purple;
+    border: 2px solid pink;
     flex-direction: column;
-  }
+}
   
   .flex-container2 > div {
-      background-color: aqua;
+      background-color: rgb(213, 225, 225);
       margin: 2%;
       padding: 20px;  
-  }
+}
 
-  /* FERDIGHETER i OM MEG */
+/* PROSJEKTER */
+.flex-container3 {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid orange;
+    flex-direction: column;
+}
+  
+  .flex-container3 > div {
+      background-color: rgb(213, 225, 225);
+      margin: 2%;
+      padding: 20px;  
+}
+
+  /* PROSJEKTER i OM MEG */
   .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
-  }
-  .grid-item {
-    background-color: rgba(255, 141, 141, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.grid-item {
+    background-color: rgb(231, 238, 238);
+    border: 1px dashed rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
     text-align: center;
-  }
-
-  .hovedinnhold {
+}
+.hovedinnhold {
     display: grid;
     grid-auto-rows: auto;
-    grid: 
-        'in' 'sp' 1fr
-        /3fr 1fr;
-  }
-
-  .info {
-    grid-area: in;
-  }
-
-  .språk {
-    grid-area: sp;
-  }
+    grid-template-columns: 3fr 1fr;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    border: 2px solid turquoise;
+}
