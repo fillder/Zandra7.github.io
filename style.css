@@ -101,3 +101,19 @@ table, tr, td {
     font-size: 30px;
     text-align: center;
   }
+
+  .hovedinnhold {
+    display: grid;
+    grid-auto-rows: auto;
+    grid: 
+        'in' 'sp' 1fr
+        /3fr 1fr;
+  }
+
+  .info {
+    grid-area: in;
+  }
+
+  .språk {
+    grid-area: sp;
+  }
