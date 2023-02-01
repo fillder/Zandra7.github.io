@@ -58,6 +58,7 @@ a {
     background-color: rgba(219, 237, 255, 0.8);
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 
@@ -110,6 +111,7 @@ a {
     border: 1px dashed rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
+    width: 320px;
 }
 .hovedinnhold {
     display: grid;
@@ -124,4 +126,20 @@ a {
 
 .celle {
     width: 150px;
+}
+
+.cookie-img {
+    float: right;
+}
+
+.online-gaming-img {
+    float: right;
+}
+
+.snake-img {
+    float: right;
+}
+
+.logo-img {
+    float: right;
 }
