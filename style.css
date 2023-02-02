@@ -84,7 +84,7 @@ a {
     flex-direction: column;
 }
   
-  .flex-container2 > div {
+.flex-container2 > div {
       background-color: rgb(213, 225, 225);
       margin: 2%;
       padding: 20px;  
@@ -100,10 +100,8 @@ a {
     flex-direction: column;
 }
   
-  .flex-container3 > div {
-      background-color: rgb(213, 225, 225);
-      margin: 2%;
-      padding: 20px;  
+.flex-container3 > div {
+    background-color: rgb(213, 225, 225);
 }
 
   /* PROSJEKTER i OM MEG */
@@ -111,14 +109,20 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    width: 100%;
 }
 .grid-item {
     background-color: rgb(231, 238, 238);
     border: 1px dashed rgba(0, 0, 0, 0.8);
-    padding: 20px;
     text-align: center;
-    width: 320px;
+    width: 100%;
+
 }
+
+.grid-item > div {
+    width: 100%;
+}
+
 .hovedinnhold {
     display: grid;
     grid-auto-rows: auto;
@@ -133,4 +137,8 @@ a {
 #kontakt {
     border: 2px solid rgb(224, 216, 64);
     padding: 20px 0;
+}
+
+.prosjekt {
+    width: 100%;
 }
