@@ -17,6 +17,10 @@ h4 {
     font-family: sans-serif, bold;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 /* UNDEROVERSKRIFTER */
 .flex-container {
     display: flex;
