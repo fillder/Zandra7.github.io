@@ -1,13 +1,18 @@
+/* ALT */
 * {
     margin: 0px;
     padding: 0px;
 }
 
+/* MAIN */
 main {
-    margin: 100px 150px;
     text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 100px;
 }
-/* SANDRA og UNDEROVERSKIRFTER */ 
+
+/* OVERSKRIFTER */
 h1, h2, h3 {
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-align: center;
@@ -15,67 +20,58 @@ h1, h2, h3 {
 
 h4 {
     font-family: sans-serif, bold;
+    line-height: 300%;
 }
 
 h1 {
     font-size: 40px;
 }
-
-/* UNDEROVERSKRIFTER */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center;
-    border: 2px solid rgb(147, 237, 147);
-  }
-
-.celle {
-    width: 150px;
-}
-
+/* TEKST */
 p {
-  font-family:fantasy, monospace, sans-serif;
+    font-family:fantasy, monospace, sans-serif;
 }
 
-th, tr {
-    border: 10px;
-    padding: 10px 50px;
-    text-align: center;
-}
-
+/* KNAPPER */
 a {
     color: rgb(3, 3, 3);
     text-decoration: none;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    border: 2px solid yellowgreen;
+/* KNAPPER BEHOLDER*/
+.knapper-beholder {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(147, 237, 147);
 }
 
-.project {
-    background-color: rgba(219, 237, 255, 0.8);
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 2fr 1fr;
+/* NAME */
+.name {
+    display: flex;
+    justify-content: center;
+    border: 2px solid turquoise;
 }
 
+/* KNAPPER */
+.knapper {
+    width: 150px;
+}
 
-.flex-container > div {
+.knapper-beholder > div {
     background-color: rgb(213, 225, 225);
     margin: 2%;
     padding: 20px;  
 }
 
-/* INFORMASJON og SPRÅK i OM MEG */
-.flex-container2 {
+/* KONTAKT MEG */
+#kontakt {
+    border: 2px solid rgb(224, 216, 64);
+    padding: 20px 0;
+}
+
+/* INFORMASJON og SPRÅK */
+.info-og-språk-beholder {
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -83,15 +79,21 @@ a {
     border: 2px solid pink;
     flex-direction: column;
 }
-  
-.flex-container2 > div {
+
+.info-og-språk {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 3fr 1fr;
+}
+
+.info-og-språk-beholder > div {
       background-color: rgb(213, 225, 225);
       margin: 2%;
       padding: 20px;  
 }
 
 /* PROSJEKTER */
-.flex-container3 {
+.prosjekter-beholder {
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -99,46 +101,45 @@ a {
     border: 2px solid orange;
     flex-direction: column;
 }
-  
-.flex-container3 > div {
-    background-color: rgb(213, 225, 225);
+
+/* div i prosjekter */
+.prosjekter-beholder > div {
+    background-color: rgb(227, 239, 239);
 }
 
-  /* PROSJEKTER i OM MEG */
-  .grid-container {
+
+.prosjekt-grid-beholder {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
     width: 100%;
 }
-.grid-item {
+
+.prosjekt-item {
     background-color: rgb(231, 238, 238);
     border: 1px dashed rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
 
+    background-color: rgba(244, 244, 244, 0.8);
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 2fr 1fr;
 }
 
-.grid-item > div {
+.prosjekt-item > div {
     width: 100%;
 }
 
-.hovedinnhold {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 3fr 1fr;
-}
-.name {
-    display: flex;
-    justify-content: center;
-    border: 2px solid turquoise;
-}
-
-#kontakt {
-    border: 2px solid rgb(224, 216, 64);
-    padding: 20px 0;
+#prosj-tittel {
+    line-height: 200%;
 }
 
 .prosjekt {
     width: 100%;
+}
+
+.prosjekt-bilder {
+    margin: 10px;
 }
