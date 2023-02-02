@@ -30,12 +30,6 @@ p {
   font-family:fantasy, monospace, sans-serif;
 }
 
-table {
-    text-align: center;
-    margin: auto;
-    /*font-family: 'Courier New', Courier, monospace; */
-}
-
 th, tr {
     border: 10px;
     padding: 10px 50px;
