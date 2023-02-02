@@ -143,3 +143,7 @@ a {
 .logo-img {
     float: right;
 }
+
+#kontakt {
+    border: 2px solid rgb(224, 216, 64);
+}
