@@ -144,7 +144,19 @@ a {
     margin: 10px;
 }
 
+/* ----- PROSJEKTSIDE ----- */
+
 .tekst {
     margin-left: 24%;
     margin-right: 24%;
+}
+
+.hoved > p, ul {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+
+.hoved > h1, h2 {
+    margin-bottom: 10px;
 }
