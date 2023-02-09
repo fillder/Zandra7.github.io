@@ -1,55 +1,145 @@
+/* ALT */
 * {
     margin: 0px;
     padding: 0px;
 }
 
-.main {
-    margin: 5% 10%;
+/* MAIN */
+main {
     text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 100px;
 }
 
-h1, h2 {
+/* OVERSKRIFTER */
+h1, h2, h3 {
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-align: center;
 }
 
-h2 {
-    font-size: 20px;
+h4 {
+    font-family: sans-serif, bold;
+    line-height: 300%;
 }
 
-/* p {
-  font-family:fantasy, monospace, sans-serif;
-} */
-
-table {
-    text-align: center;
-    margin: auto;
-    /*font-family: 'Courier New', Courier, monospace; */
+h1 {
+    font-size: 40px;
+}
+/* TEKST */
+p {
+    font-family:fantasy, monospace, sans-serif;
 }
 
-th, tr {
-    border: 10px;
-    padding: 10px 50px;
-    text-align: center;
-}
-
+/* KNAPPER */
 a {
     color: rgb(3, 3, 3);
     text-decoration: none;
 }
 
-.container {
+/* KNAPPER BEHOLDER*/
+.knapper-beholder {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(147, 237, 147);
+}
+
+/* NAME */
+.name {
+    display: flex;
+    justify-content: center;
+    border: 2px solid turquoise;
+}
+
+/* KNAPPER */
+.knapper {
+    width: 150px;
+}
+
+.knapper-beholder > div {
+    background-color: rgb(213, 225, 225);
+    margin: 2%;
+    padding: 20px;  
+}
+
+/* KONTAKT MEG */
+#kontakt {
+    border: 2px solid rgb(224, 216, 64);
+    padding: 20px 0;
+}
+
+/* INFORMASJON og SPRÅK */
+.info-og-språk-beholder {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid pink;
+    flex-direction: column;
+}
+
+.info-og-språk {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-auto-rows: auto;
+    grid-template-columns: 3fr 1fr;
 }
 
-.project {
-    background-color: rgba(219, 237, 255, 0.8);
-    padding: 20px;
+.info-og-språk-beholder > div {
+      background-color: rgb(213, 225, 225);
+      margin: 2%;
+      padding: 20px;  
+}
+
+/* PROSJEKTER */
+.prosjekter-beholder {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border: 2px solid orange;
+    flex-direction: column;
+}
+
+/* div i prosjekter */
+.prosjekter-beholder > div {
+    background-color: rgb(227, 239, 239);
+}
+
+
+.prosjekt-grid-beholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.prosjekt-item {
+    background-color: rgb(231, 238, 238);
+    border: 1px dashed rgba(0, 0, 0, 0.8);
     text-align: center;
+    width: 100%;
+
+    background-color: rgba(244, 244, 244, 0.8);
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 2fr 1fr;
 }
 
-table, tr, td {
-    margin-left: auto;
+.prosjekt-item > div {
+    width: 100%;
+}
+
+#prosj-tittel {
+    line-height: 200%;
+}
+
+.prosjekt {
+    width: 100%;
+}
+
+.prosjekt-bilder {
+    margin: 10px;
 }
