@@ -97,56 +97,41 @@ a {
     padding: 20px;  
 }
 
-/* PROSJEKTER */
-.prosjekter-beholder {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center;
-    /* border: 2px solid orange; */
-    flex-direction: column;
-}
-
-/* div i prosjekter */
-.prosjekter-beholder > div {
-    background-color: rgb(227, 239, 239);
-}
-
-
-.prosjekt-grid-beholder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-}
-
-.prosjekt-item {
-    background-color: rgb(231, 238, 238);
-    border: 1px dashed rgba(0, 0, 0, 0.8);
-    text-align: center;
-    width: 100%;
-
-    background-color: rgba(244, 244, 244, 0.8);
-    text-align: center;
-    width: 100%;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 2fr 1fr;
-}
-
-.prosjekt-item > div {
-    width: 100%;
-}
+/* -- --- -- -- -- - -- PROSJEKTER -- --- -- -- -- - -- */
 
 #prosj-tittel {
-    line-height: 200%;
+    padding: 50px;
+    font-size: 35px;
 }
 
-.prosjekt {
-    width: 100%;
+.prosjekter {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prosj-web prosj-cookie"
+        "prosj-snake prosj-logo";
 }
 
-.prosjekt-bilder {
-    margin: 10px;
+.prosj-web { grid-area: prosj-web; 
+    cursor: pointer;}
+
+.prosj-cookie { grid-area: prosj-cookie; 
+    cursor: pointer;}
+
+.prosj-snake { grid-area: prosj-snake; 
+    cursor: pointer;}
+
+.prosj-logo { grid-area: prosj-logo; 
+    cursor: pointer;}
+
+
+.prosj-web, .prosj-cookie, .prosj-logo, .prosj-snake {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 5px 10px; 
+    background-color: rgba(244, 244, 244, 0.8);
 }
 
 /* ----- PROSJEKTSIDE ----- */
