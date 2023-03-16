@@ -18,6 +18,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+img {
+    display: block;
+}
+
 h4 {
     font-family: sans-serif, bold;
     line-height: 300%;
@@ -51,11 +55,9 @@ a {
     margin-top: -100px;
     margin-right: -150px;
     margin-left: -150px;
-    display: flex;
     justify-content: center;
     background-color: rgba(244, 244, 244, 0.8);
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding: 20% 0 20% 0;
 }
 
 /* KNAPPER */
@@ -106,28 +108,42 @@ a {
 
 .prosjekter {  display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 15px 15px;
     grid-auto-flow: row;
     grid-template-areas:
         "prosj-web prosj-cookie"
-        "prosj-snake prosj-logo";
+        "prosj-invoicing prosj-snake"
+        "prosj-logo .";
+    text-align: left;
 }
 
-.prosj-web { grid-area: prosj-web; 
-    cursor: pointer;}
+.prosjekter-grid-elem {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: 150px;
+}
 
-.prosj-cookie { grid-area: prosj-cookie; 
-    cursor: pointer;}
+.prosj-web { grid-area: prosj-web; }
 
-.prosj-snake { grid-area: prosj-snake; 
-    cursor: pointer;}
+.prosj-cookie { grid-area: prosj-cookie; }
 
-.prosj-logo { grid-area: prosj-logo; 
-    cursor: pointer;}
+.prosj-snake { grid-area: prosj-snake; }
 
+.prosj-logo { grid-area: prosj-logo; }
 
-.prosj-web, .prosj-cookie, .prosj-logo, .prosj-snake {
+.prosj-invoicing { grid-area: prosj-invoicing; }
+
+.prosjekter div img {
+    width: 100%;
+    height: 100%;
+    padding-inline-end: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.prosj-web, .prosj-cookie, .prosj-logo, .prosj-snake, .prosj-invoicing {
     display: flex;
     justify-content: flex-start;
     padding: 10px 0 5px 10px; 
