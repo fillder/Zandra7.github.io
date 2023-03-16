@@ -97,56 +97,32 @@ a {
     padding: 20px;  
 }
 
-/* PROSJEKTER */
-.prosjekter-beholder {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center;
-    /* border: 2px solid orange; */
-    flex-direction: column;
-}
+/* -- --- -- -- -- - -- PROSJEKTER -- --- -- -- -- - -- */
 
-/* div i prosjekter */
-.prosjekter-beholder > div {
-    background-color: rgb(227, 239, 239);
-}
-
-
-.prosjekt-grid-beholder {
-    display: grid;
+.prosjekter {  display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prosj-web prosj-cookie"
+        "prosj-snake prosj-logo";
 }
 
-.prosjekt-item {
-    background-color: rgb(231, 238, 238);
-    border: 1px dashed rgba(0, 0, 0, 0.8);
-    text-align: center;
-    width: 100%;
+.prosj-web { grid-area: prosj-web; }
 
-    background-color: rgba(244, 244, 244, 0.8);
-    text-align: center;
-    width: 100%;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 2fr 1fr;
-}
+.prosj-cookie { grid-area: prosj-cookie; }
 
-.prosjekt-item > div {
-    width: 100%;
-}
+.prosj-snake { grid-area: prosj-snake; }
 
-#prosj-tittel {
-    line-height: 200%;
-}
+.prosj-logo { grid-area: prosj-logo; }
 
-.prosjekt {
-    width: 100%;
-}
 
-.prosjekt-bilder {
-    margin: 10px;
+.prosj-web, .prosj-cookie, .prosj-logo, .prosj-snake {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 5px 10px; 
+    background-color: rgb(213, 225, 225);
 }
 
 /* ----- PROSJEKTSIDE ----- */
