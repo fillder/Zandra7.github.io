@@ -14,8 +14,8 @@ main {
 
 /* OVERSKRIFTER */
 h1, h2, h3 {
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 }
 
 h4 {
@@ -24,7 +24,7 @@ h4 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
 }
 /* TEKST */
 p {
@@ -48,9 +48,14 @@ a {
 
 /* NAME */
 .name {
+    margin-top: -100px;
+    margin-right: -150px;
+    margin-left: -150px;
     display: flex;
     justify-content: center;
-    border: 2px solid turquoise;
+    background-color: rgb(127, 211, 211);
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 
 /* KNAPPER */
@@ -87,9 +92,9 @@ a {
 }
 
 .info-og-språk-beholder > div {
-      background-color: rgb(213, 225, 225);
-      margin: 2%;
-      padding: 20px;  
+    background-color: rgb(213, 225, 225);
+    margin: 2%;
+    padding: 20px;  
 }
 
 /* PROSJEKTER */
@@ -98,7 +103,7 @@ a {
     justify-content: center;
     align-content: space-between;
     align-items: center;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     flex-direction: column;
 }
 
