@@ -99,6 +99,10 @@ a {
 
 /* -- --- -- -- -- - -- PROSJEKTER -- --- -- -- -- - -- */
 
+#prosj-tittel {
+    padding: 50px;
+}
+
 .prosjekter {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -122,7 +126,7 @@ a {
     display: flex;
     justify-content: flex-start;
     padding: 10px 0 5px 10px; 
-    background-color: rgb(213, 225, 225);
+    background-color: rgba(244, 244, 244, 0.8);
 }
 
 /* ----- PROSJEKTSIDE ----- */
