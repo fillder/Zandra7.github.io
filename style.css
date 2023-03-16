@@ -101,6 +101,7 @@ a {
 
 #prosj-tittel {
     padding: 50px;
+    font-size: 35px;
 }
 
 .prosjekter {  display: grid;
@@ -113,13 +114,17 @@ a {
         "prosj-snake prosj-logo";
 }
 
-.prosj-web { grid-area: prosj-web; }
+.prosj-web { grid-area: prosj-web; 
+    cursor: pointer;}
 
-.prosj-cookie { grid-area: prosj-cookie; }
+.prosj-cookie { grid-area: prosj-cookie; 
+    cursor: pointer;}
 
-.prosj-snake { grid-area: prosj-snake; }
+.prosj-snake { grid-area: prosj-snake; 
+    cursor: pointer;}
 
-.prosj-logo { grid-area: prosj-logo; }
+.prosj-logo { grid-area: prosj-logo; 
+    cursor: pointer;}
 
 
 .prosj-web, .prosj-cookie, .prosj-logo, .prosj-snake {
