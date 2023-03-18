@@ -56,7 +56,8 @@ a {
     margin-right: -150px;
     margin-left: -150px;
     justify-content: center;
-    background-color: rgba(244, 244, 244, 0.8);
+    background-color: rgb(213, 225, 225);
+    /* background-color: rgba(244, 244, 244, 0.8); */
     padding: 20% 0 20% 0;
 }
 
@@ -126,13 +127,9 @@ a {
 }
 
 .prosj-web { grid-area: prosj-web; }
-
 .prosj-cookie { grid-area: prosj-cookie; }
-
 .prosj-snake { grid-area: prosj-snake; }
-
 .prosj-logo { grid-area: prosj-logo; }
-
 .prosj-invoicing { grid-area: prosj-invoicing; }
 
 .prosjekter div img {
@@ -152,17 +149,54 @@ a {
 
 /* ----- PROSJEKTSIDE ----- */
 
-.tekst {
-    margin-left: 24%;
-    margin-right: 24%;
-}
-
 .hoved > p, ul {
     margin-bottom: 20px;
     line-height: 30px;
 }
 
-
 .hoved > h1, h2 {
     margin-bottom: 10px;
+}
+
+.img-online_gaming {
+    width: 60%;
+    margin: auto;
+}
+
+.prosj-beskrivelse, .prosj-funksjoner, .prosj-github, .gå-tilbake {
+    background-color: rgb(213, 225, 225);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hoved {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 1fr 1fr;
+    gap: 14px 14px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prosj-beskrivelse prosj-funksjoner"
+        "prosj-github prosj-github"
+        "gå-tilbake gå-tilbake";
+}
+
+.prosj-github { 
+    grid-area: prosj-github; 
+    height: fit-content;
+}
+.gå-tilbake { 
+    grid-area: gå-tilbake; 
+    height: fit-content;
+    background-color: rgb(177, 199, 199);
+}
+.prosj-beskrivelse { grid-area: prosj-beskrivelse; }
+.prosj-funksjoner { grid-area: prosj-funksjoner; }
+
+.prosj-beskrivelse p, .prosj-beskrivelse img {
+    padding: 10px;
+}
+
+.prosj-github:hover, .gå-tilbake:hover {
+    background-color: rgba(244, 244, 244, 0.8);
 }
