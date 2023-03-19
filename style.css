@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 89px;
 }
 
 /* MAIN */
@@ -33,7 +34,24 @@ h4 {
 
 h1 {
     font-size: 60px;
+    margin-top: 7%;
+    text-align: left;
+    margin-left: 100px;
 }
+
+.name h2 {
+    text-align: left;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+/* TITTLER */
+#prosj-tittel, #om-meg-tittel, #kontakt-tittel {
+    padding: 50px;
+    font-size: 35px;
+    transition: scroll 0.5s; 
+}
+
 /* TEKST */
 p {
     font-family: fantasy, monospace, sans-serif;
@@ -45,42 +63,64 @@ a {
     text-decoration: none;
 }
 
-/* KNAPPER BEHOLDER*/
-.knapper-beholder {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center;
-    border: 2px solid rgb(147, 237, 147);
+/* -- --- -- -- -- - -- NAVIGASJON -- --- -- -- -- - -- */
+.navbar {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 14px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "portfolio-tekst . knapp1 knapp2 knapp3";
+        background-color: white;
+        width: 100%;
+        position: fixed;
 }
 
-/* NAME */
+.portfolio-tekst { grid-area: portfolio-tekst; }
+.knapp1 { grid-area: knapp1; }
+.knapp2 { grid-area: knapp2; }
+.knapp3 { grid-area: knapp3; }
+
+.navbar div {
+    padding: 25px;
+}
+
+.navbar div:hover {
+    background-color: rgb(244, 244, 244);
+}
+
+/* -- --- -- -- -- - -- NAVN -- --- -- -- -- - -- */
 .name {
     margin-top: -100px;
     margin-right: -150px;
     margin-left: -150px;
     justify-content: center;
-    background-color: rgb(213, 225, 225);
+    background-color: rgb(244, 244, 244);
     /* background-color: rgb(244, 244, 244) */
-    padding: 20% 0 20% 0;
+    padding: 15% 0 10% 0;
 }
 
-/* KNAPPER */
-.knapper {
-    width: 150px;
+.navn {  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "name myImg";
 }
 
-.knapper-beholder > div {
-    background-color: rgb(213, 225, 225);
-    margin: 2%;
-    padding: 20px;  
+.name { grid-area: name; }
+.myImg { grid-area: myImg; }
+
+.navn div img {
+    height: 400px;
+    margin-left: 35%;
 }
 
-/* TITTLER */
-#prosj-tittel, #om-meg-tittel, #kontakt-tittel {
-    padding: 50px;
-    font-size: 35px;
-    transition: scroll 0.5s; 
+.toppen {
+    margin-top: 25%;
 }
 
 /* -- --- -- -- -- - -- KONTAKT -- --- -- -- -- - -- */
@@ -222,4 +262,5 @@ a {
 
 .proj-title {
     margin-top: -50px;
+    margin-left: 0;
 }

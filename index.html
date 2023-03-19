@@ -8,27 +8,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            
-            <!-- - --- - --- -- --- -- --- -- NAVN - --- - --- -- --- -- --- -- -->
-            <div class="name">
-                <h1>SANDRA ENG</h1>
-                <h2>Elev på F21</h2>
-            </div>
-
+        <nav>
             <!-- - --- - --- -- --- -- --- -- NAVIGASJON - --- - --- -- --- -- --- -- -->
-            <div class="knapper-beholder">
-                <div class="knapper"><a href="#kontakt-tittel"><h2>Ta Kontakt</h2></a></div>
-                <div class="knapper"><a href="#om-meg-tittel"><h2>Om meg</h2></a></div>
-                <div class="knapper"><a href="#prosj-tittel"><h2>Prosjekter</h2></a></div>  
+            <div class="navbar">
+                <div class="portfolio-tekst"><a href="#toppen"><h2>Til Toppen</h2></a></div>
+                <div class="knapp1"><a href="#kontakt-tittel"><h2>Ta Kontakt</h2></a></div>
+                <div class="knapp2"><a href="#om-meg-tittel"><h2>Om Meg</h2></a></div>
+                <div class="knapp3"><a href="#prosj-tittel"><h2>Prosjekter</h2></a></div>  
+            </div>
+        </nav>
+        <main id="toppen">
+            <!-- - --- - --- -- --- -- --- -- NAVN - --- - --- -- --- -- --- -- -->
+            <div class="navn name">
+                <div class="toppen">
+                    <h1>SANDRA ENG</h1>
+                    <h2>Elev på F21</h2>
+                </div>
+                <div class="myImg">
+                    <img src="Images/MyPicture.png" alt="Picture of me">
+                </div>
             </div>
 
             <!-- - --- - --- -- --- -- --- -- KONTAKT - --- - --- -- --- -- --- -- -->
             <h3 id="kontakt-tittel">Kontakt meg!</h3>
             <div class="kontakt">
                 <div class="adresse">
-                    <h4>Adresse:</h4> 
-                    <p>Fugleliveien 23J</p>
+                    <h4>Bosted:</h4> 
+                    <p>Oslo-øst</p>
                 </div>
                 <div class="tlf">
                     <h4>Telefon:</h4> 
@@ -56,6 +62,7 @@
             </div>
 
             <!-- - --- - --- -- --- -- --- -- PROSJEKTER - --- - --- -- --- -- --- -- -->
+
             <h3 id="prosj-tittel" style="color: rgb(3, 3, 3)";>Prosjekter</h3> 
             <div class="prosjekter">
                 <div class="prosj-web prosjekter-grid-elem" onclick="location.href='online-gaming.html'"> <!-- Website project -->
